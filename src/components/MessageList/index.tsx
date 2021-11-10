@@ -13,7 +13,7 @@ type Message = {
     }
 }
 
-export function MessageList() {
+export function MessageList () {
     const [messages, setMessages] = useState<Message[]>([]);
 
     useEffect(() => {
@@ -29,7 +29,7 @@ export function MessageList() {
 
             <ul className={styles.messageList}>
                 {messages.map(messages => {
-                    return (  
+                    return (
                         <li key={messages.id} className={styles.message}>
                             <p className={styles.messageContent}>{messages.text}</p>
                             <div className={styles.messageUser}>
