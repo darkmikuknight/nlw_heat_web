@@ -7,7 +7,8 @@ module.exports = {
     },
     env: {
         es6: true,
-        node: true
+        node: true,
+        browser: true
     },
     plugins: [
         '@typescript-eslint'
@@ -46,6 +47,10 @@ module.exports = {
         'no-undef': 'error',
         'prefer-const': 'error',
         'no-plusplus': 'error',
+        'no-console': 'warn',
+        'keyword-spacing': ['error', {
+            'before': true
+        }],
         'no-multiple-empty-lines': [
             'error',
             {
@@ -116,12 +121,13 @@ module.exports = {
             'conditionalAssign': false,
             'returnAssign': false,
             'ignoreJSX': 'multi-line'
-        }]
-        "react-hooks/rules-of-hooks": "error",
-        "import/prefer-default-export": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".ts", ".jsx", ".tsx"] }],
-        "react/jsx-indent": ["off", 4],
-        "react/jsx-indent-props": ["off"],
+        }],
+        // "react-hooks/rules-of-hooks": "error",
+        // "import/prefer-default-export": "off",
+        // "react/jsx-filename-extension": [1, { "extensions": [".js", ".ts", ".jsx", ".tsx"] }],
+        // "react/jsx-indent": ["off", 4],
+        // "react/jsx-indent-props": ["off"],
+        'react/react-in-jsx-scope': 'off'
 
     }
     // settings: {
